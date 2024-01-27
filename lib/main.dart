@@ -21,9 +21,9 @@ void main() {
   /// Complex Case
   ///print(frequencyCounter([1,2,3,4], [1,4,9,16]));
   ///
- /// print(isValidAnagram('anagrams', 'anograms'));
+  print(isValidAnagram('anagrams', 'anograms'));
 
-  print(isContainsDuplicates([1,2,3,3]));
+ // print(isContainsDuplicates([1,2,3,3]));
 }
 
 // - Check over zero length
