@@ -7,20 +7,16 @@ bool isContainsDuplicates(List arr) {
 
   var mapOfint = {};
 
-  for(int i in arr) {
-    mapOfint[i] = (mapOfint[i] ?? 0) + 1;
-  }
 
-  for(var x in mapOfint.values){
-    if (x>1) {
-      print("it Containssssss");
+  for(var i in arr) {
+    if(mapOfint.containsKey(i)) {
       return true;
     }
+    mapOfint[i] = mapOfint[i];
   }
-
   return false;
 }
 
 void main() {
-   print(isContainsDuplicates([1,2,3]));
+   print(isContainsDuplicates([1,2,2,3,6]));
   }
